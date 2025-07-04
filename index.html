@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intranet Casa Militar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              verdeCeara: "#00693e",
+              amareloCeara: "#fbc02d",
+              cinzaClaro: "#f5f5f5",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-gray-100 min-h-screen flex flex-col items-center px-4 py-10">
-    <h1 class="text-4xl font-bold text-gray-800 mb-2 text-center">
+  <body
+    class="bg-cinzaClaro min-h-screen flex flex-col items-center px-4 py-10"
+  >
+    <h1 class="text-4xl font-bold text-verdeCeara mb-2 text-center">
       Intranet Casa Militar
     </h1>
 
-    <p class="text-gray-600 text-lg mb-10 text-center max-w-2xl">
+    <p class="text-gray-700 text-lg mb-10 text-center max-w-2xl">
       Bem-vindo à Intranet da Casa Militar. Acesse os sistemas institucionais de
       forma rápida e segura.
     </p>
@@ -19,33 +34,35 @@
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl"
     >
+      <!-- Bloco genérico - repita para os demais -->
       <a
         href="https://sapm.pm.ce.gov.br/login_sapm/"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Sapm</h2>
-        <p class="text-sm text-gray-500">
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Sapm</h2>
+        <p class="text-sm text-gray-600">
           Sistema de gestão da Polícia Militar do Ceará.
         </p>
       </a>
 
+      <!-- Repita este bloco para os outros sistemas -->
       <a
         href="https://sisbol.pm.ce.gov.br/login_bcg/"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Sisbol</h2>
-        <p class="text-sm text-gray-500">Sistema de acesso aos boletins.</p>
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Sisbol</h2>
+        <p class="text-sm text-gray-600">Sistema de acesso aos boletins.</p>
       </a>
 
       <a
         href="https://siarm.pm.ce.gov.br/login_siarm/"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Siarm</h2>
-        <p class="text-sm text-gray-500">
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Siarm</h2>
+        <p class="text-sm text-gray-600">
           Sistema de acesso ao controle de armamento.
         </p>
       </a>
@@ -53,10 +70,10 @@
       <a
         href="https://suite.ce.gov.br/"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Suite</h2>
-        <p class="text-sm text-gray-500">
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Suite</h2>
+        <p class="text-sm text-gray-600">
           Sistema de tramitação eletrônica de processos.
         </p>
       </a>
@@ -64,28 +81,28 @@
       <a
         href="https://sisac.casamil.ce.gov.br"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Sisac</h2>
-        <p class="text-sm text-gray-500">Sistema de gestão da 1ª CPG.</p>
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Sisac</h2>
+        <p class="text-sm text-gray-600">Sistema de gestão da 1ª CPG.</p>
       </a>
 
       <a
         href="https://siscadoc.casamil.ce.gov.br"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Siscadoc</h2>
-        <p class="text-sm text-gray-500">Sistema de cadastro de ocorrências.</p>
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Siscadoc</h2>
+        <p class="text-sm text-gray-600">Sistema de cadastro de ocorrências.</p>
       </a>
 
       <a
         href="http://10.9.169.63/sae"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Sae</h2>
-        <p class="text-sm text-gray-500">
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Sae</h2>
+        <p class="text-sm text-gray-600">
           Sistema de acompanhamento estratégico.
         </p>
       </a>
@@ -93,19 +110,19 @@
       <a
         href="https://www.casamil.ce.gov.br/"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Casa Militar</h2>
-        <p class="text-sm text-gray-500">Site da Casa Militar.</p>
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Casa Militar</h2>
+        <p class="text-sm text-gray-600">Site da Casa Militar.</p>
       </a>
 
       <a
         href="https://gmail.com"
         target="_blank"
-        class="bg-white hover:bg-blue-50 transition rounded-2xl shadow p-6 flex flex-col items-center text-center"
+        class="bg-white hover:bg-verdeCeara/10 transition rounded-2xl shadow p-6 flex flex-col items-center text-center border border-verdeCeara"
       >
-        <h2 class="text-xl font-semibold text-gray-800 mb-1">Gmail</h2>
-        <p class="text-sm text-gray-500">Acesso ao e-mail institucional.</p>
+        <h2 class="text-xl font-semibold text-verdeCeara mb-1">Gmail</h2>
+        <p class="text-sm text-gray-600">Acesso ao e-mail institucional.</p>
       </a>
     </div>
   </body>
